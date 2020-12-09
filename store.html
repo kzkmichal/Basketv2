@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Generics | Store</title>
+    <meta name="description" content="This is the description" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <nav class="main-nav nav">
+        <ul>
+          <li><a href="store.html">STORE</a></li>
+        </ul>
+      </nav>
+      <h1 class="band-name band-name-large">The Generics</h1>
+    </header>
+    <section>
+      <div class="product-input">
+        <form>
+          <div class="form-control">
+            <label for="name">Product Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="form-control">
+            <label for="price">Product Price</label>
+            <input type="number" id="price" step="1" min="0" />
+          </div>
+          <div class="form-control">
+            <label for="image">Image</label>
+            <select name="image" id="image">
+              <option value="Album1">Album1</option>
+              <option value="Album2">Album2</option>
+              <option value="Album3">Album3</option>
+              <option value="Cofee">Cofee</option>
+              <option value="Shirt">Shirt</option>
+            </select>
+          </div>
+          <button type="submit">ADD Product</button>
+        </form>
+      </div>
+    </section>
+    <section class="container content-section">
+      <h2 class="section-header">MUSIC</h2>
+      <div class="shop-items"></div>
+    </section>
+    <section class="container content-section">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$39.97</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">
+        PURCHASE
+      </button>
+    </section>
+    <footer class="main-footer">
+      <div class="container main-footer-container">
+        <h3 class="band-name">The Generics</h3>
+        <ul class="nav footer-nav">
+          <li>
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="Images/YouTube Logo.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.spotify.com" target="_blank">
+              <img src="Images/Spotify Logo.png" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="Images/Facebook Logo.png" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module" src="src/app/main.js"></script>
+  </body>
+</html>
