@@ -6,6 +6,8 @@ export class ButtonsController {
     this.buttonsView = new ButtonsView();
     this.buttonsView.clickEvent(this.addToBasketHandler);
     this.buttonsView.removeEvent(this.removeItemHandler);
+    this.buttonsView.editItemClickEvent(this.editItemHandler);
+    this.buttonsView.addNewProductEvent(this.addItemHandler);
   }
 
   addToBasketHandler = (id) => this.appService.createItem(id);
@@ -21,7 +23,8 @@ export class ButtonsController {
   renderItemButtons(id) {
     this.buttonsView.renderItemButtons(id);
   }
-  editItemButton(id) {
-    this.buttonsView.editItemButton(id);
-  }
+
+  editItemHandler = (id) => this.appService.editProduct(id);
+
+  addItemHandler = () => this.appService.addNewProduct();
 }
